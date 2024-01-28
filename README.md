@@ -2,12 +2,18 @@
 
 ## new
 build:
+```
 pip wheel --no-deps -w dist .
+
 python setup.py bdist_wheel
+
 pip install .
+```
 
 clean:
+```
 python setup.py clean --all
+```
 
 
 
