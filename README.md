@@ -1,5 +1,16 @@
 # coralsun
 
+## new
+build:
+pip wheel --no-deps -w dist .
+python setup.py bdist_wheel
+pip install .
+
+clean:
+python setup.py clean --all
+
+
+
 Coralsun is a small utility cython library used to provide python support for low level kernel features. 
 
 Currently only IOKit and Mach IPC is supported. The fuzzer opalrobot depends on this utility library. 
